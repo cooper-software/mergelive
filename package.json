@@ -1,0 +1,17 @@
+{
+  "name": "diffsync",
+  "version": "1.0.0",
+  "description": "Differential sync for json documents",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jasmine-node test/*"
+  },
+  "author": "Elisha Fitch-Cook <elisha@elishacook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jiff": "^0.7.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
