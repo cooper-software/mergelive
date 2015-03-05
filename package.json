@@ -4,7 +4,7 @@
   "description": "Differential sync for json documents",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jasmine-node test/*"
+    "test": "./node_modules/.bin/jasmine-node test/*"
   },
   "author": "Elisha Fitch-Cook <elisha@elishacook.com>",
   "license": "MIT",
