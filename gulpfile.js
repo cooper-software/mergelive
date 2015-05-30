@@ -14,7 +14,7 @@ gulp.task('build', function ()
         {
             entries: './lib',
             debug: true,
-            bundleExternal: false,
+            bundleExternal: true,
             standalone: 'mergelive'
         })
         .bundle()
