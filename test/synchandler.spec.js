@@ -3,7 +3,6 @@ var SyncHandler = require("../lib").SyncHandler
 var create_fake_socket = function ()
 {
     return {
-        on: createSpy("on"),
         send: createSpy("send")
     }
 }
@@ -58,8 +57,7 @@ describe("SyncHandler", function ()
         var socket = create_fake_socket(),
             handler = new SyncHandler({socket: socket})
         
-        expect(socket.on).toHaveBeenCalled()
-        expect(socket.on.calls[0].args[0]).toEqual("message")
+        expect(socket.onmessage).toBeDefined()
     })
     
     it("has a way to require a document or fail", function ()

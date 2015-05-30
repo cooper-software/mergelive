@@ -60,7 +60,7 @@ describe('SyncServer', function ()
         var handler = server.handlers[server.last_connection_id]
         expect(handler).toBeDefined()
         expect(client_socket.on).toHaveBeenCalled()
-        var close_handler_call = client_socket.on.calls[1]
+        var close_handler_call = client_socket.on.calls[0]
         expect(close_handler_call.args[0]).toEqual('close')
         expect(close_handler_call.args[1].constructor).toBe(Function)
         close_handler_call.args[1]()
