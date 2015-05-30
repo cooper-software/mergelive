@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mergelive</title>
+</head>
+<body>
+	<script src="../build/mergelive.min.js"></script>
+	<script>
+	var socket = new WebSocket('ws://localhost:3030')
+	var handler = new mergelive.SyncHandler(
+	{
+		socket: socket,
+		
+		oninit: function ()
+		{
+			console.log('ready', handler.document)
+		},
+		
+		onchange: function (doc)
+		{
+			console.log(doc)
+		},
+		
+		onerror: function (e)
+		{
+			console.error(e)
+		}
+	})
+
+	socket.onopen = function ()
+	{
+		handler.load('foo')
+	}
+	</script>
+</body>
+</html>
