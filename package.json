@@ -1,7 +1,7 @@
 {
-  "name": "diffsync",
-  "version": "1.0.0",
-  "description": "Differential sync for json documents",
+  "name": "mergelive",
+  "version": "0.1.0",
+  "description": "Differential sync for javascript",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/jasmine-node test/*",
