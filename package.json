@@ -1,6 +1,6 @@
 {
   "name": "mergelive",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Differential sync for javascript",
   "main": "lib/index.js",
   "scripts": {
